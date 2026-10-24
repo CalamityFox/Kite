@@ -12,10 +12,14 @@ cp -avf "/ctx/system_files"/. /
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
+# RPM Fusion
+dnf5 install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+dnf5 install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 # System Packages
 dnf5 install -y niri noctalia
 dnf5 install -y nautilus
-dnf5 install -y broadcom-wl akmod kmod akmods fonts-comfortaa
+dnf5 install -y aajohan-comfortaa-fonts brcmfmac-firmware brcmsmac broadcom-wl akmod kmod akmods fonts-comfortaa
 
 dnf5 remove -y gnome-shell gnome-desktop
 
