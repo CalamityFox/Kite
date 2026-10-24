@@ -14,7 +14,7 @@ cp -avf "/ctx/system_files"/. /
 
 # System Packages
 dnf5 install -y flatpak nautilus niri noctalia
-dnf5 group remove -y gnome-desktop-environment
+dnf5 remove -y gnome-shell gnome-desktop
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
