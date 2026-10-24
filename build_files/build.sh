@@ -21,7 +21,7 @@ dnf5 install -y niri noctalia
 dnf5 install -y nautilus
 dnf5 install -y aajohan-comfortaa-fonts broadcom-wl akmods
 
-rpm-ostree override remove gnome-shell gnome-desktop
+rpm-ostree override remove gnome-shell
 
 # Flatpak
 dnf5 install -y flatpak
