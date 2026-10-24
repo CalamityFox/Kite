@@ -19,7 +19,7 @@ dnf5 install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree
 # System Packages
 dnf5 install -y niri noctalia
 dnf5 install -y nautilus
-dnf5 install -y aajohan-comfortaa-fonts brcmfmac-firmware brcmsmac broadcom-wl akmod kmod akmods fonts-comfortaa
+dnf5 install -y aajohan-comfortaa-fonts broadcom-wl akmods
 
 dnf5 remove -y gnome-shell gnome-desktop
 
