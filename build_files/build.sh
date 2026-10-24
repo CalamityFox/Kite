@@ -13,9 +13,14 @@ cp -avf "/ctx/system_files"/. /
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # System Packages
-dnf5 install -y flatpak nautilus niri noctalia
-dnf5 remove -y "gnome-\*"
+dnf5 install -y niri noctalia
+dnf5 install -y nautilus
+dnf5 install -y broadcom-wl akmod kmod akmods fonts-comfortaa
 
+dnf5 remove -y gnome-shell gnome-desktop
+
+# Flatpak
+dnf5 install -y flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Use a COPR Example:
