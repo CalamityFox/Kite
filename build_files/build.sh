@@ -16,6 +16,7 @@ cp -avf "/ctx/system_files"/. /
 dnf5 install -y nautilus niri noctalia
 
 dnf5 remove -y "gnome-shell*"
+dnf5 remove -y gnome-shell gnome-desktop
 
 # Flatpak configuration
 dnf5 install -y flatpak
