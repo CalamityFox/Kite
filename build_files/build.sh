@@ -5,12 +5,7 @@ set -ouex pipefail
 # Copy the contents of system_files/ of the git repo to /
 cp -avf "/ctx/system_files"/. /
 
-yum install -y dnf-plugins-core
-
 ## Install packages
-### Librewolf repo
-dnf5 config-manager addrepo --from-repofile=https://repo.librewolf.net/librewolf.repo
-
 # Packages can be installed from any enabled yum repo on the image.
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
@@ -25,7 +20,7 @@ dnf5 install -y niri noctalia
 dnf5 install -y nautilus
 dnf5 install -y aajohan-comfortaa-fonts broadcom-wl akmods
 
-dnf5 install -y decibels file-roller foliate gnome-calculator gnome-text-editor gnome-weather librewolf libreoffice-writer libreoffice-impress loupe papers ptyxis showtime thunderbird timeshift
+dnf5 install -y decibels file-roller firefox foliate gnome-calculator gnome-text-editor gnome-weather libreoffice-writer libreoffice-impress loupe papers ptyxis showtime thunderbird timeshift
 
 # Flatpak
 dnf5 install -y flatpak
