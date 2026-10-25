@@ -5,9 +5,11 @@ set -ouex pipefail
 # Copy the contents of system_files/ of the git repo to /
 cp -avf "/ctx/system_files"/. /
 
+yum install -y dnf-plugins-core
+
 ## Install packages
 ### Librewolf repo
-dnf config-manager addrepo --from-repofile=https://repo.librewolf.net/librewolf.repo
+dnf5 config-manager addrepo --from-repofile=https://repo.librewolf.net/librewolf.repo
 
 # Packages can be installed from any enabled yum repo on the image.
 # RPMfusion repos are available by default in ublue main images
