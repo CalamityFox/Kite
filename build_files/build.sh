@@ -49,7 +49,7 @@ FLATPAKS=(
   page.codeberg.libre_menu_editor.LibreMenuEditor    # Edit application menu
   page.tesk.Refine                                   # Desktop tweaks
 )
-flatpak install --noninteractive --assumeyes flathub "${FLATPAKS[@]}"
+# flatpak install --noninteractive --assumeyes flathub "${FLATPAKS[@]}"
 
 # Use a COPR Example:
 #
