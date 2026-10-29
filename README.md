@@ -2,7 +2,7 @@
 
 GNU/Linux [bootc](https://bootc.dev)/[rpm-ostree](https://coreos.github.io/rpm-ostree) image based off of [Universal Blue](https://universal-blue.org).
 
-The image currently uses [Niri](https://github.com/niri-wm/niri) and [Noctalia Shell](https://noctalia.dev/shell), but a switch to Noctalia's [Umbriel](https://noctalia.dev/umbriel) Wayland compositor is being considered.
+The image uses [Niri](https://github.com/niri-wm/niri) and [Noctalia Shell](https://noctalia.dev/shell).
 
 # Installation
 ### Fresh install
