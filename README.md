@@ -1,8 +1,7 @@
 # Risk: a Linux distro
+![You're telling me a queer coded this?](https://github.com/CalamityFox/Risk/blob/main/media/queer.png) ![They/Them](https://github.com/CalamityFox/Risk/blob/main/media/theythem.png) ![Install gender malware](https://github.com/CalamityFox/Risk/blob/main/media/gendermalware.gif)
 
-https://github.com/CalamityFox/Risk/blob/main/media/queer.png
-
-![You're telling me a queer coded this?](https://github.com/CalamityFox/Risk/blob/main/media/queer.png)
+![I want the source code for life](https://github.com/CalamityFox/Risk/blob/main/media/sourcecodeforlife.gif) ![Terminally online](https://github.com/CalamityFox/Risk/blob/main/media/terminallyonline.gif) ![Ancient internet creature](https://github.com/CalamityFox/Risk/blob/main/media/ancientinternetcreature.gif) ![Don't rush me](https://github.com/CalamityFox/Risk/blob/main/media/dontrushme.gif)
 
 GNU/Linux [bootc](https://bootc.dev)/[rpm-ostree](https://coreos.github.io/rpm-ostree) image based off of [Silverblue](https://fedoraproject.org/atomic-desktops/silverblue).
 
