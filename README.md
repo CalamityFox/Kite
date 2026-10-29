@@ -1,20 +1,23 @@
-<img src="media/logo-wide.png" width="600"/>
+<img src="media/logo.png" width="250"/>
 
-<img src="media/gendermalware.gif" width="450"/> <img src="media/queer.png" width="150"/>
+<img src="media/handcoded.png" width="100"/> <img src="media/theythem.png" width="100"/>
 
-<img src="media/sourcecodeforlife.gif" width="300"/> <img src="media/terminallyonline.gif" width="300"/> 
+`Risk` is my GNU/Linux system using [bootc](https://bootc.dev) and [rpm-ostree](https://coreos.github.io/rpm-ostree). It's based off of [Universal Blue](https://universal-blue.org)'s [image template](https://github.com/ublue-os/image-template).
 
-<img src="media/ancientinternetcreature.gif" width="300"/> <img src="media/dontrushme.gif" width="300"/>
+# <img src="media/favicon.gif" width="25"/> What is this?
 
-**Risk** is a GNU/Linux system using [bootc](https://bootc.dev) and [rpm-ostree](https://coreos.github.io/rpm-ostree)
+I want to get better at basic development, and I've always had some issue with various pre-existing distros, so I'm making one for myself. If it ends up working well I might consider making it a "proper" distro, but for now this is purely a personal project.
 
-It uses [Niri](https://github.com/niri-wm/niri) with [Noctalia's shell](https://noctalia.dev/shell), and the [LibreWolf](https://librewolf.net) browser and various [GNOME](https://apps.gnome.org) apps.
+It uses [Niri](https://github.com/niri-wm/niri) with [Noctalia's shell](https://noctalia.dev/shell), as well as various [GNOME apps](https://apps.gnome.org) for basic functionality. For a list of all⁽¹⁾ pre-installed software, see [below](https://github.com/CalamityFox/Risk/edit/main/README.md#-pre-installed-software).
 
-# Installation
+# <img src="media/favicon.gif" width="25"/> Installation
+
+If you for some reason want to install this random assortment of code held together with duct tape and paperclips:
+
 ### Fresh install
-ISO builds are in the works, but aren't a priority right now.
+ISO builds will happen... at some point. Right now I'm just focusing on basic functionality.
 ### Rebasing
-You can rebase from an existing bootc or rpm-ostree system:
+You can rebase from an existing `bootc`/`rpm-ostree` system:
 ```
 # rebasing with bootc
 sudo bootc switch --enforce-container-sigpolicy ghcr.io/calamityfox/risk:latest
@@ -22,3 +25,39 @@ sudo bootc switch --enforce-container-sigpolicy ghcr.io/calamityfox/risk:latest
 # rebasing with rpm-ostree
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/calamityfox/risk
 ```
+
+# <img src="media/favicon.gif" width="25"/> Pre-installed software
+
+`Risk` comes with some applications pre-installed. Those labelled as `RPM` cannot be uninstalled⁽²⁾, as they're part of the immutable system image. All other apps are packaged as Flatpaks and can be removed through the software manager:
+
+- [Librewolf](https://librewolf.net) browser
+- [Loupe](https://apps.gnome.org/Loupe) image viewer
+- [Nautilus](https://apps.gnome.org/Nautilus) file manager (RPM)
+- [Showtime](https://apps.gnome.org/Showtime) video player
+- [Thunderbird](https://www.thunderbird.net) e-mail client 
+
+To install additional software, use [Flathub](https://flathub.org) where possible. If a package isn't available on Flathub, you can layer it with `rpm-ostree` (not recommended), or use [Distrobox](https://distrobox.it).
+
+# <img src="media/favicon.gif" width="25"/> Notes
+
+⁽¹⁾The list may be slightly behind actual changes. For a fully up-to-date list, see the [build.sh](https://github.com/CalamityFox/Risk/blob/main/build_files/build.sh)
+
+⁽²⁾Technically you can uninstall RPMs with `rpm-ostree override remove` but this isn't recommended outside of the build process since it can cause system instability. 
+
+⁽³⁾ ⁽⁴⁾
+
+
+
+# <img src="media/favicon.gif" width="25"/> Contact
+
+If you have any questions, suggestions or concerns, message me on [Signal](https://signal.org).
+
+My username is `kes.123` 
+
+# 
+
+<div align="center">
+<img src="media/terminallyonline.gif" width="220"/> <img src="media/gendermalware.gif" width="220"/> <img src="media/ancientinternetcreature.gif" width="220"/> 
+
+<img src="media/sourcecodeforlife.gif" width="220"/>  <img src="media/dontrushme.gif" width="220"/>
+</div>
