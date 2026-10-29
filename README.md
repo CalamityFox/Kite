@@ -1,5 +1,7 @@
 # Risk: a Linux distro
-<img src="media/queer.png" height="50"/> <img src="media/theythem.png" height="50"/> <img src="media/gendermalware.gif" height="30"/> <img src="media/sourcecodeforlife.gif" height="200"/> <img src="media/terminallyonline.gif" height="200"/> <img src="media/ancientinternetcreature.gif" height="200"/> <img src="media/dontrushme.gif" height="200"/>
+<img src="media/queer.png" height="50"/> <img src="media/theythem.png" height="50"/> <img src="media/gendermalware.gif" height="30"/>
+<img src="media/sourcecodeforlife.gif" height="200"/> <img src="media/terminallyonline.gif" height="200"/> 
+<img src="media/ancientinternetcreature.gif" height="200"/> <img src="media/dontrushme.gif" height="200"/>
 
 GNU/Linux [bootc](https://bootc.dev)/[rpm-ostree](https://coreos.github.io/rpm-ostree) image based off of [Silverblue](https://fedoraproject.org/atomic-desktops/silverblue).
 
