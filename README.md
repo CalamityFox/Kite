@@ -1,9 +1,7 @@
-
 <div align="center">
 <img src="media/logo.png" width="250"/>
 
 <img src="media/handcoded.png" width="100"/> <img src="media/theythem.png" width="100"/>
-
 
 [`rpm-ostree`](https://coreos.github.io/rpm-ostree)/[`bootc`](https://bootc.dev) system based on [Universal Blue](https://universal-blue.org)
 
@@ -13,7 +11,7 @@
 
 I want to get better at basic development, and I've always had some issue with various pre-existing distros, so I'm making one for myself. If it ends up working well I might consider making it a "proper" distro, but for now this is purely a personal project.
 
-It uses [`niri`](https://github.com/niri-wm/niri) with [`noctalia`](https://noctalia.dev/shell), as well as various [GNOME apps](https://apps.gnome.org) for basic functionality. For a list of all⁽¹⁾ pre-installed software, see [below](https://github.com/CalamityFox/Risk/edit/main/README.md#-pre-installed-software).
+It uses [`niri`](https://github.com/niri-wm/niri) with [`noctalia`](https://noctalia.dev/shell), as well as various [GNOME apps](https://apps.gnome.org) for basic functionality. For a list of all⁽¹⁾ pre-installed software, see [below](README.md#-pre-installed-software).
 
 # <img src="media/favicon.gif" width="25"/> Installation
 
@@ -25,10 +23,10 @@ ISO builds will happen... at some point. Right now I'm working on other things f
 ### Rebasing
 You can rebase from an existing `rpm-ostree` or `bootc` system:
 ```
-# rebasing with bootc
+# Rebasing with bootc
 sudo bootc switch --enforce-container-sigpolicy ghcr.io/calamityfox/risk:latest
 
-# rebasing with rpm-ostree
+# Rebasing with rpm-ostree
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/calamityfox/risk
 ```
 
@@ -46,7 +44,7 @@ To install additional software, use [Flathub](https://flathub.org) where possibl
 
 # <img src="media/favicon.gif" width="25"/> Notes
 
-⁽¹⁾The list may be slightly behind actual changes. For a fully up-to-date list, see the [`build.sh`](https://github.com/CalamityFox/Risk/blob/main/build_files/build.sh)
+⁽¹⁾The list may be slightly behind actual changes. For a fully up-to-date list, see the [`build.sh`](build_files/build.sh)
 
 ⁽²⁾Technically you can uninstall RPMs with `rpm-ostree override remove $PACKAGE` but this isn't recommended outside of the build process since it can cause system instability. 
 
