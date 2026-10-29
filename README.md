@@ -6,9 +6,9 @@
 
 <img src="media/ancientinternetcreature.gif" width="300"/> <img src="media/dontrushme.gif" width="300"/>
 
-GNU/Linux [bootc](https://bootc.dev)/[rpm-ostree](https://coreos.github.io/rpm-ostree) image based off of [Silverblue](https://fedoraproject.org/atomic-desktops/silverblue).
+**Risk** is a GNU/Linux system using [bootc](https://bootc.dev) and [rpm-ostree](https://coreos.github.io/rpm-ostree)
 
-The image uses [Niri](https://github.com/niri-wm/niri) and [Noctalia Shell](https://noctalia.dev/shell).
+It uses [Niri](https://github.com/niri-wm/niri) and [Noctalia](https://noctalia.dev/shell), as well as the [LibreWolf](https://librewolf.net) browser and various [GNOME](https://apps.gnome.org) apps.
 
 # Installation
 ### Fresh install
