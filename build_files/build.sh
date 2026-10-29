@@ -9,14 +9,9 @@ dnf5 install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree
 
 # System Packages
 PACKAGES=(
-  aajohan-comfortaa-fonts                            # Comfortaa font
-  akmods                                             # Manage kernel modules
-  broadcom-wl                                        # WiFi driver for Broadcom chipsets
-  flatpak                                            # Sandboxed apps
-  gdm                                                # Terminal
-  nautilus                                           # GNOME file manager
-  niri                                               # Wayland compositor
-  noctalia                                           # Shell
+  aajohan-comfortaa-fonts
+  niri
+  noctalia
 )
 dnf5 install -y "${PACKAGES[@]}"
 
