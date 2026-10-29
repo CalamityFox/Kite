@@ -2,6 +2,7 @@
 set -ouex pipefail
 cp -avf "/ctx/system_files"/. /
 systemctl enable podman.socket
+dracut -f
 
 # RPM Fusion
 dnf5 install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
@@ -17,6 +18,7 @@ dnf5 install -y "${PACKAGES[@]}"
 
 # Flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak update --assumeyes
 
 FLATPAKS=(
   app.devsuite.Ptyxis                                # Terminal
