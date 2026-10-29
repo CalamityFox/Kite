@@ -8,7 +8,7 @@
 
 **Risk** is a GNU/Linux system using [bootc](https://bootc.dev) and [rpm-ostree](https://coreos.github.io/rpm-ostree)
 
-It uses [Niri](https://github.com/niri-wm/niri) and [Noctalia](https://noctalia.dev/shell), as well as the [LibreWolf](https://librewolf.net) browser and various [GNOME](https://apps.gnome.org) apps.
+It uses [Niri](https://github.com/niri-wm/niri) with [Noctalia's shell](https://noctalia.dev/shell), and the [LibreWolf](https://librewolf.net) browser and various [GNOME](https://apps.gnome.org) apps.
 
 # Installation
 ### Fresh install
