@@ -1,5 +1,5 @@
 # Risk: a Linux distro
-<img src="media/queer.png" height="50"/> <img src="media/theythem.png" height="50"/> <img src="media/gendermalware.gif" height="30"/>
+<img src="media/queer.png" height="50"/> <img src="media/gendermalware.gif" height="30"/>
 
 <img src="media/sourcecodeforlife.gif" height="200"/> <img src="media/terminallyonline.gif" height="200"/> 
 
