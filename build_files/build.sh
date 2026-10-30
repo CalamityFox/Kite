@@ -4,13 +4,13 @@ cp -avf "/ctx/system_files"/. /
 systemctl enable podman.socket
 
 PACKAGES=(
+  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+  https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
   niri
   noctalia
 )
-dnf5 install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-dnf5 install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 dnf5 install -y "${PACKAGES[@]}"
-dnf5 update -y
+# dnf5 update -y
 
 FLATPAKS=(
   app.devsuite.Ptyxis
@@ -38,9 +38,9 @@ FLATPAKS=(
   page.codeberg.libre_menu_editor.LibreMenuEditor
   page.tesk.Refine
 )
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --noninteractive --assumeyes flathub "${FLATPAKS[@]}"
-flatpak update --assumeyes
+# flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+# flatpak install --noninteractive --assumeyes flathub "${FLATPAKS[@]}"
+# flatpak update --assumeyes
 
 # COPR
 # dnf5 -y copr enable ublue-os/staging
