@@ -15,6 +15,7 @@ set -ouex pipefail
 systemctl enable podman.socket
  
 # RPM Fusion
+dnf5 config-manager addrepo -y --from-repofile=https://repo.librewolf.net/librewolf.repo
 dnf5 install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 dnf5 install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 		
@@ -63,13 +64,13 @@ addFlatpak=(
  org.gnome.World.Secrets
  org.libreoffice.LibreOffice
  org.mozilla.thunderbird
- org.signal.Signal
- page.codeberg.libre_menu_editor.LibreMenuEditor
- page.tesk.Refine
+ # org.signal.Signal
+ # page.codeberg.libre_menu_editor.LibreMenuEditor
+ # page.tesk.Refine
 )
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-# flatpak install --noninteractive --assumeyes flathub "${addFlatpak[@]}"
-flatpak install -y --noninteractive flathub io.github.kolunmi.Bazaar
+flatpak install -y --noninteractive flathub "${addFlatpak[@]}"
+# flatpak install -y --noninteractive flathub io.github.kolunmi.Bazaar
 
 EOT
 
