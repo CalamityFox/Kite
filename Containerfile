@@ -4,7 +4,7 @@ FROM scratch AS ctx
 COPY sysfiles /sysfiles
 
 # Base Image
-FROM quay.io/fedora/fedora-sericea:latest
+FROM quay.io/fedora/fedora-silverblue:latest
 
 # Other base images:
 # Universal Blue - github.com/orgs/ublue-os/packages
@@ -30,13 +30,17 @@ addPackages=(
 dnf5 install -y "${addPackages[@]}"
   
 removePackages=(
+ gnome-classic-session
+ gnome-desktop
+ gnome-session
  gnome-shell
  gnome-shell-extension-common
  gnome-shell-extension-background-logo
+ gnome-shell-extension-places-menu
  gnome-shell-extension-window-list
- # gnome-classic-session
+ gnome-classic-session
 )
-# rpm-ostree override remove "${removePackages[@]}"
+rpm-ostree override remove "${removePackages[@]}"
   
 addFlatpak=(
  app.devsuite.Ptyxis
