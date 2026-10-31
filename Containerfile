@@ -31,8 +31,6 @@ dnf5 install -y "${addPackages[@]}"
   
 removePackages=(
  gnome-classic-session
- gnome-desktop
- gnome-session
  gnome-shell
  gnome-shell-extension-common
  gnome-shell-extension-background-logo
