@@ -38,7 +38,6 @@ removePackages=(
  gnome-shell-extension-background-logo
  gnome-shell-extension-places-menu
  gnome-shell-extension-window-list
- gnome-classic-session
 )
 rpm-ostree override remove "${removePackages[@]}"
   
