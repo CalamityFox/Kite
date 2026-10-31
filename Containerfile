@@ -4,7 +4,7 @@ FROM scratch AS ctx
 COPY sysfiles /sysfiles
 
 # Base Image
-FROM quay.io/fedora/fedora-silverblue:latest
+FROM quay.io/fedora/fedora-sericea:latest
 
 # Other base images:
 # Universal Blue - github.com/orgs/ublue-os/packages
@@ -36,7 +36,7 @@ removePackages=(
  gnome-shell-extension-window-list
  # gnome-classic-session
 )
-rpm-ostree override remove "${removePackages[@]}"
+# rpm-ostree override remove "${removePackages[@]}"
   
 addFlatpak=(
  app.devsuite.Ptyxis
