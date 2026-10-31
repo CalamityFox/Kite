@@ -16,7 +16,7 @@ RUN rm /opt && mkdir /opt
 
 RUN <<-'EOT' sh
 set -ouex pipefail
-cp -avf "/ctx/sysfiles" /
+# cp -avf "/sysfiles" /
 systemctl enable podman.socket
  
 # RPM Fusion
