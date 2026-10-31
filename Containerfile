@@ -1,6 +1,6 @@
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
-COPY build_files /
+# COPY build_files /
 COPY sysfiles /sysfiles
 
 # Base Image
@@ -16,7 +16,7 @@ RUN rm /opt && mkdir /opt
 
 RUN <<-'EOT' sh
 set -ouex pipefail
-# cp -avf "/sysfiles" /
+# cp -avf "ctx/sysfiles" /
 systemctl enable podman.socket
  
 # RPM Fusion
@@ -31,6 +31,7 @@ dnf5 install -y "${addPackages[@]}"
   
 removePackages=(
  gnome-shell
+ gnome-shell-extension-common
  # gnome-classic-session
 )
 rpm-ostree override remove "${removePackages[@]}"
