@@ -30,9 +30,11 @@ addPackages=(
 dnf5 install -y "${addPackages[@]}"
   
 removePackages=(
+ gnome-browser-connector
  gnome-classic-session
  gnome-session-wayland-session
  gnome-shell
+ gnome-shell-extension-apps-menu
  gnome-shell-extension-common
  gnome-shell-extension-background-logo
  gnome-shell-extension-launch-new-instance
