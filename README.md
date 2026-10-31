@@ -9,11 +9,13 @@
 
 <div align="center">
 
-# <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/>
+### <img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/>
 
-WORK-IN-PROGRESS
+### WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK
+### IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN
+### PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS
 
-# <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/>
+### <img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/>
 
 </div>
 
@@ -21,7 +23,7 @@ WORK-IN-PROGRESS
 
 I want to get better at basic development, and I've always had some issue with various pre-existing distros, so I'm making one for myself. If it ends up working well I might consider making it a "proper" distro, but for now this is purely a personal project.
 
-It uses [`niri`](https://github.com/niri-wm/niri) with [`noctalia`](https://noctalia.dev/shell), as well as various [GNOME apps](https://apps.gnome.org) for basic functionality. For a list of all⁽¹⁾ pre-installed software, see [below](README.md#-pre-installed-software).
+It uses [`niri`](https://github.com/niri-wm/niri) with [`noctalia`](https://noctalia.dev/shell). For a list of all⁽¹⁾ pre-installed software, see [below](README.md#-pre-installed-software).
 
 # <img src="media/favicon.gif" width="25"/> How it works
 
@@ -72,9 +74,9 @@ To install additional software, use [Flathub](https://flathub.org) where possibl
 
 # <img src="media/favicon.gif" width="25"/> Contact
 
-If you have any questions, suggestions or concerns, message me on [Signal](https://signal.org).
+If you encounter a bug, please report it in the [Issue Tracker](issues).
 
-My username is [`kes.123`](https://signal.me/#eu/nM5aRSJ1kqOL0RtXQHOtgxqk6S5baJuLUNf4RxV1cu1ZIYaKd_dNBIZPvKpvRRZO) 
+For anything else, message me on [Signal](https://signal.org), my username is  [`kes.123`](https://signal.me/#eu/nM5aRSJ1kqOL0RtXQHOtgxqk6S5baJuLUNf4RxV1cu1ZIYaKd_dNBIZPvKpvRRZO) 
 
 # 
 
