@@ -7,6 +7,16 @@
 
 </div>
 
+<div align="center">
+
+# <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/>
+
+WORK-IN-PROGRESS
+
+# <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/> <img src="media/favicon.gif" width="25"/>
+
+</div>
+
 # <img src="media/favicon.gif" width="25"/> What is this?
 
 I want to get better at basic development, and I've always had some issue with various pre-existing distros, so I'm making one for myself. If it ends up working well I might consider making it a "proper" distro, but for now this is purely a personal project.
@@ -22,13 +32,12 @@ ISO builds will happen... at some point. Right now I'm working on other things f
 
 ### Rebasing
 You can rebase from an existing `rpm-ostree` or `bootc` system:
-```
-# Rebasing with bootc
-sudo bootc switch --enforce-container-sigpolicy ghcr.io/calamityfox/risk:latest
 
-# Rebasing with rpm-ostree
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/calamityfox/risk
-```
+`rpm-ostree rebase ostree-unverified-registry:ghcr.io/calamityfox/risk`
+
+OR
+
+`sudo bootc switch --enforce-container-sigpolicy ghcr.io/calamityfox/risk:latest`
 
 # <img src="media/favicon.gif" width="25"/> Pre-installed software
 
