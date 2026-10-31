@@ -1,7 +1,7 @@
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
 COPY build_files /
-COPY system_files /system_files
+COPY sysfiles /sysfiles
 
 # Base Image
 FROM quay.io/fedora/fedora-silverblue:latest
@@ -16,7 +16,7 @@ RUN rm /opt && mkdir /opt
 
 RUN <<-'EOT' sh
 set -ouex pipefail
-cp -avf "/ctx/system_files"/. /
+cp -avf "/ctx/sysfiles"/. /
 systemctl enable podman.socket
  
 # RPM Fusion
