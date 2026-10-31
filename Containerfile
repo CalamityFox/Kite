@@ -26,12 +26,15 @@ dnf5 install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree
 addPackages=(
  niri
  noctalia
+ sddm
 )
 dnf5 install -y "${addPackages[@]}"
   
 removePackages=(
+ gdm
  gnome-browser-connector
  gnome-classic-session
+ gnome-initial-setup
  gnome-session-wayland-session
  gnome-shell
  gnome-shell-extension-apps-menu
