@@ -23,21 +23,30 @@ I want to get better at basic development, and I've always had some issue with v
 
 It uses [`niri`](https://github.com/niri-wm/niri) with [`noctalia`](https://noctalia.dev/shell), as well as various [GNOME apps](https://apps.gnome.org) for basic functionality. For a list of all⁽¹⁾ pre-installed software, see [below](README.md#-pre-installed-software).
 
+# <img src="media/favicon.gif" width="25"/> How it works
+
+All customisations are kept within the [`Containerfile`](Containerfile) and the [`/sysfiles`](sysfiles) directory.
+
+The `Containerfile` obtains the latest [Silverblue](https://fedoraproject.org/atomic-desktops/silverblue) image and modifies it according to the options laid out in the `Containerfile`.
+
+All files from [`/sysfiles`](sysfiles) are copied to `/` on the `Risk` system. If the file already exists, it is overwritten.
+
 # <img src="media/favicon.gif" width="25"/> Installation
 
 If you for some reason want to install this random assortment of code held together with duct tape and paperclips:
 
-### Fresh install
-ISO builds will happen... at some point. Right now I'm working on other things first
-
 ### Rebasing
-You can rebase from an existing `rpm-ostree` or `bootc` system:
 
+```
+# Rebasing with rpm-ostree:
 `rpm-ostree rebase ostree-unverified-registry:ghcr.io/calamityfox/risk`
 
-OR
-
+# Rebasing with bootc:
 `sudo bootc switch --enforce-container-sigpolicy ghcr.io/calamityfox/risk:latest`
+```
+
+### Fresh install
+ISO builds will happen... at some point. Right now I'm working on other things first
 
 # <img src="media/favicon.gif" width="25"/> Pre-installed software
 
