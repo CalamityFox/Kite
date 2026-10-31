@@ -1,18 +1,12 @@
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
-# COPY build_files /
 COPY sysfiles /sysfiles
-
-# Base Image
 FROM quay.io/fedora/fedora-silverblue:latest
 
 # Other base images:
 # Universal Blue - github.com/orgs/ublue-os/packages
 # Fedora --------- quay.io/fedora
 # CentOS --------- quay.io/centos-bootc
-
-### Make /opt immutable
-RUN rm /opt && mkdir /opt
 
 USER root
 RUN <<-'EOT' sh
@@ -75,19 +69,9 @@ addFlatpak=(
 )
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # flatpak install --noninteractive --assumeyes flathub "${addFlatpak[@]}"
-flatpak install --noninteractive --assumeyes flathub io.gitlab.librewolf-community
-flatpak update --assumeyes
+flatpak install -y --noninteractive flathub io.github.kolunmi.Bazaar
 
-	
-	
 EOT
-
-# Run build.sh
-# RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
-    # --mount=type=cache,dst=/var/cache \
-    # --mount=type=cache,dst=/var/log \
-    # --mount=type=tmpfs,dst=/tmp \
-    # /ctx/build.sh
 
 # Verify final image
 RUN bootc container lint
