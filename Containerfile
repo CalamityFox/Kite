@@ -14,6 +14,7 @@ FROM quay.io/fedora/fedora-silverblue:latest
 ### Make /opt immutable
 RUN rm /opt && mkdir /opt
 
+USER root
 RUN <<-'EOT' sh
 set -ouex pipefail
 # cp -avf "ctx/sysfiles" /
@@ -73,7 +74,8 @@ addFlatpak=(
  page.tesk.Refine
 )
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-## flatpak install --noninteractive --assumeyes flathub "${addFlatpak[@]}"
+# flatpak install --noninteractive --assumeyes flathub "${addFlatpak[@]}"
+flatpak install --noninteractive --assumeyes flathub io.gitlab.librewolf-community
 flatpak update --assumeyes
 
 	

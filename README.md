@@ -11,9 +11,7 @@
 
 ### <img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/>
 
-### WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK
-### IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN
-### PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS
+### WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS // WORK IN PROGRESS
 
 ### <img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/><img src="media/favicon.gif" width="25"/>
 
