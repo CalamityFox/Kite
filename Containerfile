@@ -32,6 +32,8 @@ dnf5 install -y "${addPackages[@]}"
 removePackages=(
  gnome-shell
  gnome-shell-extension-common
+ gnome-shell-extension-background-logo
+ gnome-shell-extension-window-list
  # gnome-classic-session
 )
 rpm-ostree override remove "${removePackages[@]}"
