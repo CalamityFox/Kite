@@ -40,11 +40,14 @@ If you for some reason want to install this random assortment of code held toget
 ### Rebasing
 
 ```
-# Rebasing with rpm-ostree:
-`rpm-ostree rebase ostree-unverified-registry:ghcr.io/calamityfox/risk`
+# Pin current deployment
+sudo ostree admin pin 0
 
-# Rebasing with bootc:
-`sudo bootc switch --enforce-container-sigpolicy ghcr.io/calamityfox/risk:latest`
+# Rebase with rpm-ostree:
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/calamityfox/risk
+
+# OR rebase with bootc:
+sudo bootc switch --enforce-container-sigpolicy ghcr.io/calamityfox/risk:latest
 ```
 
 ### Fresh install

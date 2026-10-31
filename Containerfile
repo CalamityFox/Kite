@@ -73,7 +73,7 @@ addFlatpak=(
  page.tesk.Refine
 )
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --noninteractive --assumeyes flathub "${addFlatpak[@]}"
+## flatpak install --noninteractive --assumeyes flathub "${addFlatpak[@]}"
 flatpak update --assumeyes
 
 	
