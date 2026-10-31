@@ -31,9 +31,11 @@ dnf5 install -y "${addPackages[@]}"
   
 removePackages=(
  gnome-classic-session
+ gnome-session-wayland-session
  gnome-shell
  gnome-shell-extension-common
  gnome-shell-extension-background-logo
+ gnome-shell-extension-launch-new-instance
  gnome-shell-extension-places-menu
  gnome-shell-extension-window-list
 )
